@@ -52,7 +52,7 @@ li {
   top: 44px;
   left: 0;
   width: 100%;
-  background: #ff5;
+  /* background: #ff5; */
   padding: 20px;
 
   /* jQuery 슬라이드/업다운 효과를 위한 설정 */
