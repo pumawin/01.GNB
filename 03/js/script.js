@@ -19,15 +19,6 @@ $(function () {
 
   // 마우스 휠을 조작했을 때 weel
   $window.on('wheel', function (e) {
-    // 마우스 휠을 조작했을 대의 이벤트 정보를 보자
-    console.log(e.originalEvent.wheelDelta);
-
-    if (e.originalEvent.wheelDelta > 0) {
-      // 휠을 올린 상태
-      $header.removeClass('hide');
-    } else {
-      // 휠을 내린 상태
-      $header.addClass('hide');
-    }
+    e.originalEvent.wheelDelta > 0 ? $header.removeClass('hide') : $header.addClass('hide');
   });
 });
